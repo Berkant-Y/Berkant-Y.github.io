@@ -1,0 +1,29 @@
+[
+    {
+        "id": 101,
+        "title": "Optimizing React Performance with memo and useCallback",
+        "subtitle": "A deep dive into rendering behaviors and how to prevent unnecessary re-renders in large applications.",
+        "date": "Dec 12, 2024",
+        "readTime": "6 min read",
+        "contentSnippet": "React's rendering cycle is fast, but as applications grow, wasted renders can pile up. In this article, we explore the specific use cases for React.memo...",
+        "link": "#"
+    },
+    {
+        "id": 102,
+        "title": "Solving the N+1 Problem in GraphQL",
+        "subtitle": "How we decreased our API latency by 40% using DataLoader and proper schema design.",
+        "date": "Nov 28, 2024",
+        "readTime": "8 min read",
+        "contentSnippet": "When we first migrated to GraphQL, everything seemed great until our traffic spiked. We noticed our database was being hammered with redundant queries...",
+        "link": "#"
+    },
+    {
+        "id": 103,
+        "title": "Why I Switched from VS Code to Neovim (and back)",
+        "subtitle": "The journey of customizing a development environment and finding the balance between productivity and configuration hell.",
+        "date": "Oct 15, 2024",
+        "readTime": "5 min read",
+        "contentSnippet": "It started with a desire for mouse-free navigation. I spent weeks tweaking Lua configs, installing plugins, and memorizing motions...",
+        "link": "#"
+    }
+]

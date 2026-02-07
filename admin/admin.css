@@ -1,0 +1,151 @@
+/* Admin Panel Styles - Updated for V4 Design System */
+
+.admin-body {
+    background: var(--bg-body, #0f172a);
+    min-height: 100vh;
+    color: var(--text-muted, #94a3b8);
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 2rem;
+    background: #1e293b;
+    border: 1px solid var(--border-color, rgba(148, 163, 184, 0.1));
+    border-radius: 8px;
+    text-align: center;
+}
+
+.login-container h2 {
+    color: var(--text-main, #e2e8f0);
+    margin-bottom: 1.5rem;
+}
+
+.admin-header {
+    background: #1e293b;
+    border-bottom: 1px solid var(--border-color, rgba(148, 163, 184, 0.1));
+    padding: 1rem 0;
+}
+
+.admin-header h3 {
+    color: var(--text-main, #e2e8f0);
+}
+
+.admin-panel {
+    background: #1e293b;
+    border: 1px solid var(--border-color, rgba(148, 163, 184, 0.1));
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.admin-panel h4 {
+    color: var(--text-main, #e2e8f0);
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-muted, #94a3b8);
+    font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.6rem;
+    background: var(--bg-body, #0f172a);
+    border: 1px solid var(--border-color, rgba(148, 163, 184, 0.1));
+    color: var(--text-main, #e2e8f0);
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent, #5eead4);
+}
+
+.admin-list {
+    max-height: 600px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.admin-item {
+    background: var(--bg-body, #0f172a);
+    padding: 0.8rem;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--border-color, rgba(148, 163, 184, 0.1));
+}
+
+.admin-item span {
+    color: var(--text-main, #e2e8f0);
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: #ff5555;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.delete-btn:hover {
+    text-decoration: underline;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1.5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid transparent;
+}
+
+.btn-primary {
+    background-color: var(--accent, #5eead4);
+    color: var(--bg-body, #0f172a);
+    border-color: var(--accent, #5eead4);
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid var(--border-color, rgba(148, 163, 184, 0.1));
+    color: var(--text-main, #e2e8f0);
+}
+
+.btn-outline:hover {
+    border-color: var(--text-muted, #94a3b8);
+    background-color: rgba(30, 41, 59, 0.5);
+}
+
+/* Container for dashboard layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}

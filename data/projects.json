@@ -1,0 +1,91 @@
+[
+    {
+        "id": 6,
+        "title": "AI Recipe Chatbot",
+        "description": "An AI-powered cooking assistant that suggests recipes based on available ingredients using OpenAI's API.",
+        "tags": [
+            "Python",
+            "Chatbot",
+            "OpenAI",
+            "NLP"
+        ],
+        "githubUrl": "https://github.com/Berkant-Y/ai-recipe-chatbot",
+        "demoUrl": null,
+        "stars": 42,
+        "readme": "<h2>🍳 AI Recipe Chatbot</h2><p>A smart culinary assistant that helps you decide what to cook. Simply input your available ingredients, and the bot uses OpenAI's GPT models to generate delicious recipes.</p><h3>🌟 Features</h3><ul><li>Ingredient-based recipe generation</li><li>Step-by-step cooking instructions</li><li>Dietary restriction filtering</li></ul><h3>🛠 Tech Stack</h3><ul><li>Python</li><li>OpenAI API</li><li>Streamlit (UI)</li></ul>"
+    },
+    {
+        "id": 1,
+        "title": "E-Commerce Microservices",
+        "description": "A scalable e-commerce backend built with Node.js and RabbitMQ for asynchronous processing. Handles high-concurrency order placement.",
+        "tags": [
+            "Node.js",
+            "Docker",
+            "RabbitMQ",
+            "Redis"
+        ],
+        "githubUrl": "#",
+        "demoUrl": "#",
+        "stars": 124,
+        "readme": "<h2>🛒 E-Commerce Backend</h2><p>This project demonstrates a microservices architecture designed for high-scale e-commerce operations. It splits concerns into separate services: Order, Product, and User.</p><h3>🔧 Tech Stack</h3><ul><li><strong>Runtime:</strong> Node.js</li><li><strong>Message Broker:</strong> RabbitMQ for async communication</li><li><strong>Cache:</strong> Redis for session and product caching</li><li><strong>Containerization:</strong> Docker & Docker Compose</li></ul><h3>🚀 Key Features</h3><ul><li>Asynchronous order processing to prevent blocking</li><li>JWT Authentication and Role Based Access Control</li><li>Horizontal scaling support</li></ul>"
+    },
+    {
+        "id": 2,
+        "title": "AI Image Generator Bot",
+        "description": "Discord bot integration using OpenAI DALL-E 3 API. Includes rate limiting, user credit system, and gallery generation.",
+        "tags": [
+            "Python",
+            "Discord.py",
+            "OpenAI API",
+            "PostgreSQL"
+        ],
+        "githubUrl": "#",
+        "demoUrl": "#",
+        "stars": 89,
+        "readme": "<h2>🤖 AI Image Bot</h2><p>A Discord bot that brings DALL-E 3 directly to your server. Users can prompt images, save them to a personal gallery, and upscale them.</p><h3>✨ Features</h3><ul><li>Slash commands integration</li><li>User credit economy system</li><li>PostgreSQL database for reliable storage</li><li>Auto-moderation for NSFW prompts</li></ul><h3>📦 Installation</h3><pre><code>pip install -r requirements.txt\npython bot.py</code></pre>"
+    },
+    {
+        "id": 3,
+        "title": "React Dashboard Kit",
+        "description": "A comprehensive admin dashboard template featuring dark mode, charts, and data tables with sorting/filtering.",
+        "tags": [
+            "React",
+            "TypeScript",
+            "Material UI",
+            "Recharts"
+        ],
+        "githubUrl": "#",
+        "demoUrl": "#",
+        "stars": 256,
+        "readme": "<h2>📊 React Dashboard Kit</h2><p>A production-ready dashboard template. Built to save time on setup and focus on business logic.</p><h3>🎨 Components</h3><ul><li>Responsive Sidebar & Header</li><li>Data Tables with Sort/Filter</li><li>Interactive Charts (Line, Bar, Pie)</li><li>Theme Switcher (Dark/Light)</li></ul>"
+    },
+    {
+        "id": 4,
+        "title": "Algorithmic Trading Bot",
+        "description": "Automated cryptocurrency trading script using moving averages and RSI indicators. Backtesting engine included.",
+        "tags": [
+            "Python",
+            "Pandas",
+            "Binance API"
+        ],
+        "githubUrl": "#",
+        "demoUrl": null,
+        "stars": 45,
+        "readme": "<h2>📈 Crypto Algo Trader</h2><p>Automates trading strategies on Binance via API. It monitors market data in real-time and executes buy/sell orders based on configured indicators.</p><h3>⚙️ Strategies Configured</h3><ul><li><strong>Golden Cross:</strong> MA50 crossing above MA200</li><li><strong>RSI Oversold:</strong> Buying when RSI < 30</li></ul><p><em>Disclaimer: Use at your own risk.</em></p>"
+    },
+    {
+        "id": 5,
+        "title": "Real-time Chat App",
+        "description": "WebSocket-based chat application with room support, media sharing, and message encryption features.",
+        "tags": [
+            "Socket.io",
+            "Express",
+            "React",
+            "MongoDB"
+        ],
+        "githubUrl": "#",
+        "demoUrl": "#",
+        "stars": 78,
+        "readme": "<h2>💬 Real-time Chat</h2><p>A slack-like communication tool built with WebSockets.</p><h3>Features</h3><ul><li>Real-time messaging with Socket.io</li><li>End-to-end encryption</li><li>File sharing</li><li>Rich text formatting</li></ul>"
+    }
+]

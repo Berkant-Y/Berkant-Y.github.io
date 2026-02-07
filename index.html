@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berkant | Portfolio</title>
+    <meta name="description" content="Berkant - Full Stack Developer Portfolio">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="layout-wrapper">
+        <!-- Left Column: Fixed Header -->
+        <header class="header-fixed">
+            <div>
+                <a href="#about" style="display: block; width: fit-content;">
+                    <div class="avatar-small">
+                        <img src="assets/images/resim.png" alt="Profile"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </a>
+
+                <h1>Berkant</h1>
+                <h3 style="color: var(--text-main); margin-top: 0.5rem;">Mobile Developer</h3>
+                <div class="brand-bio tech-stack-tags">
+                    <span>Flutter</span>
+                    <span>Dart</span>
+                    <span>Swift</span>
+                    <span>iOS</span>
+                </div>
+
+                <!-- Nav -->
+                <nav class="nav-links">
+                    <a href="#about" class="nav-link">
+                        <span class="line"></span>
+                        <span class="text">Hakkımda</span>
+                    </a>
+                    <a href="#projects" class="nav-link">
+                        <span class="line"></span>
+                        <span class="text">Projeler</span>
+                    </a>
+                    <a href="#contact" class="nav-link">
+                        <span class="line"></span>
+                        <span class="text">İletişim</span>
+                    </a>
+                </nav>
+            </div>
+
+            <!-- Socials -->
+            <div class="social-links">
+                <a href="https://github.com/Berkant-Y" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://tr.linkedin.com/in/berkant-yurtsever-88a420226" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:berkantyurtsever41@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+        </header>
+
+        <!-- Right Column: Scrollable Content -->
+        <main class="main-scroll">
+
+            <!-- About Section -->
+            <section id="about">
+                <div class="section-label">Hakkımda</div>
+                <div class="about-text">
+
+                    <p>
+                        En çok keyif aldığım şey, tasarım ve mühendisliğin buluştuğu noktada,
+                        hem görsel olarak etkileyici hem de teknik olarak güçlü yazılımlar üretmek.
+                    </p>
+                    <p>
+                        Bilgisayar başında olmadığım zamanlarda genellikle arkadaşlarımla vakit geçiriyor, kitap okuyor
+                        veya yeni kahve mekanları keşfediyorum.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects">
+                <div class="section-label">Projeler</div>
+                <div class="projects-list" id="projects-container">
+                    <!-- Projects injected via JS -->
+                    <p>Projeler yükleniyor...</p>
+                </div>
+                <div style="margin-top: 2rem;">
+                    <a href="https://github.com/Berkant-Y" target="_blank" class="nav-link">
+                        <span class="line" style="width: 30px;"></span>
+                        <span class="text">Tüm Proje Arşivi</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact">
+                <div class="section-label">İletişim</div>
+                <h2 style="color: var(--text-main); margin-bottom: 1rem;">İletişime Geç</h2>
+                <p>
+                    Yukarıdaki proje linki veya gelen kutum her zaman açık. Bir sorunuz varsa veya sadece merhaba demek
+                    isterseniz, size geri dönüş yapmaya çalışacağım!
+                </p>
+                <a href="mailto:berkantyurtsever41@gmail.com" class="email-link">berkantyurtsever41@gmail.com</a>
+            </section>
+
+            <footer style="margin-top: 5rem; font-size: 0.8rem; color: var(--text-muted);">
+                <p>
+                    Designed inspired by Brittany Chiang & Built by Berkant.
+                </p>
+            </footer>
+
+        </main>
+    </div>
+
+    <!-- Project Modal -->
+    <div class="modal-overlay" id="project-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">Project Title</h3>
+                <button class="close-modal" id="close-modal">&times;</button>
+            </div>
+            <div id="modal-body">
+                <!-- Content -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Load Data First -->
+    <script src="assets/js/projects.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+
+</html>

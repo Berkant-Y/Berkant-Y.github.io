@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Portfolio Admin</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="admin-body">
+
+    <header class="admin-header">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <h3>Admin Dashboard</h3>
+            <div style="display: flex; gap: 1rem;">
+                <a href="../index.html" class="btn btn-outline" target="_blank">View Site</a>
+                <button id="logout-btn" class="btn btn-outline">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container" style="margin-top: 2rem; display: flex; gap: 2rem;">
+
+        <!-- Add Project Form -->
+        <div class="admin-panel" style="flex: 1;">
+            <h4>Add New Project</h4>
+            <form id="add-project-form">
+                <div class="form-group">
+                    <label>Title</label>
+                    <input type="text" id="p-title" required>
+                </div>
+                <div class="form-group">
+                    <label>Description</label>
+                    <textarea id="p-desc" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Tags (comma separated)</label>
+                    <input type="text" id="p-tags" placeholder="React, Node.js, AI">
+                </div>
+                <div class="form-group">
+                    <label>GitHub URL</label>
+                    <input type="url" id="p-github">
+                </div>
+                <div class="form-group">
+                    <label>Demo URL</label>
+                    <input type="url" id="p-demo">
+                </div>
+                <div class="form-group">
+                    <label>Stars (Number)</label>
+                    <input type="number" id="p-stars" value="0">
+                </div>
+                <div class="form-group">
+                    <label>README (HTML/Markdown content)</label>
+                    <textarea id="p-readme" rows="6" placeholder="<h2>Project Title</h2><p>Details...</p>"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Add Project</button>
+            </form>
+        </div>
+
+        <!-- Project List -->
+        <div class="admin-panel" style="flex: 1;">
+            <h4>Existing Projects</h4>
+            <div id="admin-project-list" class="admin-list">
+                <!-- Injected via JS -->
+            </div>
+            <button id="reset-data" class="btn btn-outline"
+                style="margin-top: 1rem; color: #ff5555; border-color: #ff5555;">Reset to Defaults</button>
+        </div>
+
+    </div>
+
+    <!-- Need to load default data too just in case it's first run -->
+    <script src="../assets/js/projects.js"></script>
+    <script src="admin.js"></script>
+</body>
+
+</html>
